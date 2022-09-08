@@ -10,7 +10,7 @@ namespace WebAPINew.Controllers
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
-    {
+    {        
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -23,6 +23,7 @@ namespace WebAPINew.Controllers
             _logger = logger;
         }
 
+        // Weather API
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
