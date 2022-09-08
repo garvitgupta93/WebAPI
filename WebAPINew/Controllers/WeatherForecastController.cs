@@ -23,7 +23,7 @@ namespace WebAPINew.Controllers
             _logger = logger;
         }
 
-        // Weather API
+        // New Weather API
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
